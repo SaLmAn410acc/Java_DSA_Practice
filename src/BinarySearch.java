@@ -5,6 +5,11 @@ public class BinarySearch {
         int [] arr = {3,5,9,10,15,20};
         System.out.println(binarySearchAscending(arr,9));
 
+
+
+
+
+
     }
 
 
