@@ -123,7 +123,6 @@ public class BinarySearch {
         int[] ans = {-1,-1};
         ans[0] = search(nums, target, true);
         ans[0] = search(nums, target, false);
-
         return ans;
     }
 
