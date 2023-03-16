@@ -1,8 +1,10 @@
-
+import java.util.Arrays;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        System.out.println("Hello Binary");
+        int [] arr = {3,5,9,10,15,20};
+        System.out.println(binarySearchAscending(arr,9));
+
     }
 
 
@@ -90,7 +92,7 @@ public class BinarySearch {
                 end = mid - 1;
             }
             else {
-                return nums[mid];
+                return mid;
             }
         }
         return -1;
