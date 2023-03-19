@@ -23,9 +23,9 @@ public class KidWithCandies {
 
 
         for (int i = 0; i < candies.length; i++) {
-            if (candies[i] >= val){
+            if (candies[i] >= val) {
                 list.add(true);
-            }else{
+            } else {
                 list.add(false);
             }
         }
@@ -38,19 +38,18 @@ public class KidWithCandies {
     static List<Boolean> kidsWithCandiesBruteForce(int[] candies, int extraCandies) {
         List<Boolean> list = new ArrayList<>();
 
-        for (int i = 0; i < candies.length; i++) {
+        for (int candy : candies) {
             boolean chk = false;
             for (int j = 0; j < candies.length; j++) {
-                if (candies[i]+extraCandies >= candies[j]){
+                if (candy + extraCandies >= candies[j]) {
                     chk = true;
                     break;
                 }
             }
 
-            if (chk == false){
+            if (chk == false) {
                 list.add(false);
-            }
-            else {
+            } else {
                 list.add(true);
             }
         }
@@ -59,12 +58,12 @@ public class KidWithCandies {
     }
 
 
-    static int findMaxValue(int[] nums){
+    static int findMaxValue(int[] nums) {
 
-        int max = nums[0] ;
+        int max = nums[0];
         for (int i = 1; i < nums.length; i++) {
 
-            if (nums[i] > max){
+            if (nums[i] > max) {
                 max = nums[i];
             }
         }
